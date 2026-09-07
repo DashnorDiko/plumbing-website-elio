@@ -1,0 +1,9 @@
+# These files sit next to the site but must not be served as public assets.
+.git
+.gitignore
+README.md
+wrangler.jsonc
+package.json
+package-lock.json
+node_modules
+.assetsignore
