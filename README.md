@@ -1,26 +1,28 @@
 # Local Plumber (plumbing-website-elio)
 
-Mobile-first UK plumber call site. Visitors tap **Call** or **WhatsApp**. We send a plumber to their location.
+Mobile-first UK plumber site. Visitors tap **Call us**. We send a plumber to their location.
 
-Contact number: **07806 950180** (`+44 7806 950180`).
+Phone: **07806 950180** (`+44 7806 950180`).
 
 ## Edit later
 
-In [`index.html`](index.html):
+In [`public/index.html`](public/index.html):
 
 - Business name (title, header, footer) — currently **Local Plumber**
 - Hours copy in the hero
-- Towns and postcodes in the **Towns and postcodes we cover** section (placeholders until you type the real list)
+- Coverage towns/postcodes are held back for SEO pages later (not shown on the homepage)
 
 ## Run locally
 
-Open `index.html` in a browser, or from this folder:
+Open `public/index.html` in a browser, or from this folder:
 
 ```bash
 npx wrangler dev
 ```
 
 Then visit the URL Wrangler prints (usually `http://127.0.0.1:8787`).
+
+Site files live in `public/` so Wrangler does not watch `.git` / `.wrangler` and get stuck in a reload loop.
 
 ## Put it on GitHub
 
@@ -45,7 +47,7 @@ git push -u origin main
 4. Build settings:
    - Framework preset: **None**
    - Build command: leave empty
-   - Build output directory: `/`
+   - Build output directory: `public`
 5. Save and deploy.
 
 After the first deploy, every push to `main` updates the live site.

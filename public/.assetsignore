@@ -1,0 +1,2 @@
+# Keep non-public files out of the asset upload.
+.assetsignore
